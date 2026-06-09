@@ -164,15 +164,15 @@ nav ul li:hover ul {
 details {
     top: 95px;
     right: 15px;
-    width: 55px;
+    width: 46px;
     overflow: hidden;
     transition: all 0.25s ease;
 }
 
 .sidebar {
     background: var(--sidebar-bg);
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 8px;
+    padding: 6px;
     position: fixed;
     top: 95px;
     right: 10px;
@@ -187,9 +187,11 @@ details {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    font-size: 24px;
+
+    width: 34px;
+    height: 34px;
+
+    font-size: 20px;
     list-style: none;
     margin-left: auto;
 }
@@ -203,7 +205,7 @@ details {
 }
 
 details[open] {
-    width: 220px;
+    width: 180px;
     animation: fadeIn 0.3s ease;
 }
 
@@ -213,49 +215,62 @@ details[open] .menu {
 
 /* ===================== TOGGLE THEME BUTTON ===================== */
 .toggletheme {
-        background: var(--putihsoft);
-        color: var(--button-text);
-        border: none;
-        border-radius: 8px;
-        padding: 8px 14px;
-        font-size: 14px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        margin-top: 15px;
-        width: 100%;
-        text-align: center;
-        font-family: 'mojang';
+    background: var(--putihsoft);
+    color: var(--button-text);
+    border: none;
+    border-radius: 6px;
+
+    padding: 6px 10px;
+
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: 'mojang';
 }
 
 .toggletheme:hover {
-        background: var(--abu);
-        color: var(--hitam);
+    background: var(--abu);
+    color: var(--hitam);
 }
 /* ===================== TOGGLE THEME BUTTON ===================== */
 
 .menu {
-    margin: 10px 0 0 0;
+    margin: 8px 0 0 0;
     padding: 0;
     list-style: none;
 }
 
 .menu li {
-        padding: 10px;
-        margin: 5px 0;
-        text-align: center;
-        background: #2C323A;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: 0.2s;
+    padding: 8px 10px;
+    margin: 4px 0;
+
+    text-align: center;
+    background: #2C323A;
+
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .menu li:hover {
-        background: #3E98CC;
+    background: #3E98CC;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: var(--putihsoft);
+
+    font-size: 13px;
+    display: block;
 }
 
 .menu li img {
-        width: 150px;
-        height: 120px;
+    width: 120px;
+    height: 95px;
 }
 
 .menu li a {
