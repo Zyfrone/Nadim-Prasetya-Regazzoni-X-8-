@@ -176,30 +176,61 @@ nav ul li:hover ul {
 }
 
 details {
-        transition: width 0.01s;
-        width: 50px;
+    position: fixed;
+    top: 95px;
+    right: 15px;
+
+    width: 55px;
+    overflow: hidden;
+
+    z-index: 9999;
+
+    transition: all 0.25s ease;
 }
 
 .sidebar {
-        top: 95px;
+    background: var(--sidebar-bg);
+    color: var(--putihsoft);
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+
+    padding: 8px;
 }
 
 .sidebar summary {
-        cursor: pointer;
-        padding: 10px 18px;
-        font-size: 20px;
-        float: right;
-        text-align: center;
-        list-style: none;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    font-size: 24px;
+
+    list-style: none;
+
+    margin-left: auto;
+}
+
+.sidebar summary::-webkit-details-marker {
+    display: none;
 }
 
 .sidebar summary:hover {
-        transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 details[open] {
-        width: 200px;
-        animation: fadeIn 0.6s ease;
+    width: 220px;
+    animation: fadeIn 0.3s ease;
+}
+
+details[open] .menu {
+    display: block;
 }
 
 /* ===================== TOGGLE THEME BUTTON ===================== */
@@ -225,9 +256,9 @@ details[open] {
 /* ===================== TOGGLE THEME BUTTON ===================== */
 
 .menu {
-        margin: 60px 0;
-        padding: 0 10px;
-        list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    list-style: none;
 }
 
 .menu li {
