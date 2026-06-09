@@ -60,65 +60,88 @@ body {
         color: var(--text);
         height: 100%;
         transition: background 0.6s ease, color 0.6s ease;
-        margin-top: 130px;
+
+        margin-top: 85px;
 }
 
 header {
         background: var(--header-bg);
         color: var(--putihsoft);
-        padding: 20px;
-        text-align: left;
-        display: flex;
-        z-index: 2;
+
         position: fixed;
-        opacity: 0.9;
-        width: 100vw;
-        margin-top: -130px;
+        top: 0;
+        left: 0;
+        width: 100%;
+
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 10px 20px;
+        box-sizing: border-box;
+
+        z-index: 1000;
+        opacity: 0.96;
 }
 
 header img {
-        width: 90px;
-        margin-right: 15px;
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
 }
 
 .logo {
         image-rendering: pixelated;
 }
 
+.brand {
+        display: flex;
+        align-items: center;
+}
+
+header h1 {
+        font-size: 1.3rem;
+        margin: 0;
+        margin-right: 20px;
+        white-space: nowrap;
+}
+
 nav {
-        height: min-content;
-        float: right;
-        margin: auto;
-        margin-right: 28px;
+        margin-left: auto;
 }
 
 nav ul {
         list-style: none;
-        margin: 0;
-        padding: 10px;
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px;
+        margin: 0;
+        padding: 0;
 }
 
 nav ul li {
         position: relative;
-        margin: 4px;
+        margin: 0;
 }
 
 nav ul li a {
         color: var(--putihsoft);
         text-decoration: none;
+
+        font-size: 0.9rem;
         font-weight: bold;
-        padding: 8px 12px;
+
+        padding: 6px 10px;
+
+        border-radius: 6px;
         display: block;
+
+        transition: all 0.25s ease;
 }
 
 nav ul li a:hover {
         background: var(--biru);
-        border-radius: 5px;
-        transition: all 0.3s;
 }
 
 nav ul li ul {
@@ -158,17 +181,7 @@ details {
 }
 
 .sidebar {
-        background: var(--sidebar-bg);
-        border-radius: 10px;
-        padding: 10px;
-        box-shadow: 0 0 10px #00000050;
-        color: var(--putihsoft);
-        position: fixed;
-        top: 150px;
-        right: 10px;
-        z-index: 10;
-        transition: all 1s;
-        height: fit-content;
+        top: 95px;
 }
 
 .sidebar summary {
