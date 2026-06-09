@@ -3,13 +3,10 @@
         src: url(../fonts/Mojang-Regular.ttf);
 }
 
-
-
 @keyframes fadeIn {
         from { opacity: 0; }
         to { opacity: 1; }
 }
-
 
 :root {
         --hitam: #111618;
@@ -21,7 +18,6 @@
         --abuterang: #e1e4ec;
         --abubiasa: #3c414e;
         --hitamterang: #22292c;
-
         /* === Default (Light Theme) === */
         --bg: var(--putihsoft);
         --text: var(--hitam);
@@ -34,7 +30,6 @@
         --shadow: var(--abugelap);
         /* === Default (Light Theme) === */
 }
-
 /* ===================== DARK THEME ===================== */
 [data-theme="dark"] {
         --bg: var(--hitam);
@@ -48,7 +43,6 @@
         --shadow: var(--abu) ;
 }
 /* ===================== DARK THEME ===================== */
-
 body {
         font-family: 'mojang';
         margin: 0;
@@ -67,19 +61,15 @@ body {
 header {
         background: var(--header-bg);
         color: var(--putihsoft);
-
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         padding: 10px 20px;
         box-sizing: border-box;
-
         z-index: 1000;
         opacity: 0.96;
 }
@@ -128,15 +118,11 @@ nav ul li {
 nav ul li a {
         color: var(--putihsoft);
         text-decoration: none;
-
         font-size: 0.9rem;
         font-weight: bold;
-
         padding: 6px 10px;
-
         border-radius: 6px;
         display: block;
-
         transition: all 0.25s ease;
 }
 
@@ -178,11 +164,8 @@ nav ul li:hover ul {
 details {
     top: 95px;
     right: 15px;
-
     width: 55px;
     overflow: hidden;
-
-
     transition: all 0.25s ease;
 }
 
@@ -190,34 +173,24 @@ details {
     background: var(--sidebar-bg);
     border-radius: 10px;
     padding: 10px;
-
     position: fixed;
-
     top: 95px;
     right: 10px;
-
     z-index: 9999;
-
     box-shadow: 0 0 10px #00000050;
     color: var(--putihsoft);
-
     height: fit-content;
 }
 
 .sidebar summary {
     cursor: pointer;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 40px;
     height: 40px;
-
     font-size: 24px;
-
     list-style: none;
-
     margin-left: auto;
 }
 
